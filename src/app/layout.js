@@ -3,10 +3,12 @@ import React from 'react';
 import Header from '../components/Header';
 
 import './styles.css';
+import SoundEnabledProvider from "../components/SoundEnabledProvider";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
+    <SoundEnabledProvider>
       <body>
         <Header />
         {children}
@@ -15,6 +17,7 @@ function RootLayout({ children }) {
           <span>Thanks for visiting!</span>
         </footer>
       </body>
+    </SoundEnabledProvider>
     </html>
   );
 }

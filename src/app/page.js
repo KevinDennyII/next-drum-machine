@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 import MaxWidthWrapper from '../components/MaxWidthWrapper';
@@ -5,6 +6,7 @@ import DrumMachine from '../components/DrumMachine';
 import styles from './page.module.css';
 
 function Home() {
+
   return (
     <MaxWidthWrapper
       as="main"
